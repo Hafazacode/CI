@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LoginStyles.css">
+    <title>login</title>
+</head>
+<body>
+    <div class="Navbar">
+        <div class="NamaPerusahaan">
+          <a href="HalamanUtama.html" class="Color1">CAR</a>
+          <a href="HalamanUtama.html" class="Color2">EN.</a>
+        </div>
+      <div class="JarakMenubar">
+        <a href="HalamanUtama.html" class="Menubar">Home</a>
+        <a href="HalamanActivity.Html" class="Menubar">Acitivity</a>
+        <a href="HalamanNews.html" class="Menubar">News</a>
+        <a href="HalamanContactUs.html" class="Menubar">Contact</a>
+        
+      </div>
+        <div class="dropdown">
+          <button class="dropbtn">Explore</button>
+          <div class="dropdown-content">
+              <a href="HalamanDaftarMobil.html" class="Menubar" id="dropdown1">Daftar Mobil</a>
+              <a href="#" class="Menubar">Wishlist</a>
+          </div>
+        </div>
+        <div class="profile" id="gmbarprofile"></div>
+      </div>
+    
+      <div id="ModalProfile" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="NameAndPicture">
+              <img src="Gambar/Navbar/user.png" alt="" class="GmbrNameAndPicture">
+              <p class="NameProfile">Name</p>
+            </div>
+            <div class="Garishiasan"></div>
+            <div class="profilemenu">
+            <div class="Menuu">
+              <a href="Login.html" class="menu">
+                <img src="Gambar/Navbar/Logologin.png" alt="" id="Gambar">
+                <span id="nama">login</span>
+              </a>
+              </div>
+              <div class="Menuu">
+                <a href="SignUp.Html" class="menu">
+                  <img src="Gambar/Navbar/Logologin.png" alt="" id="Gambar">
+                  <span id="nama">Sign Up</span>
+                </a>
+              </div>
+        </div>
+      </div>
+      </div>
+
+      <p class="JudulHalaman">Login</p>
+
+      <div class="form-login">
+        <div class="form-login-content">
+            <form action="login.php" method="post">
+            <label for="Email">Email</label>
+            <input type="text" id="Email" class="Email" pattern=".*@gmail\.com$" title="Masukkan email dengan domain @gmail.com" required>
+            <label for="Password">Password</label>
+            <input type="password" id="Password" class="Password" required>
+            <a href="" class="lupa-sandi">Lupa sandi? Klik disini</a>
+            <button type="submit">Continue</button>
+            </form>
+        </div>
+      </div>
+      <script src="Navbar.js"></script>
+</body>
+</html>

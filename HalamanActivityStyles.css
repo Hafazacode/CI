@@ -1,0 +1,439 @@
+@font-face {
+    font-family: 'Popin Reguler';
+    src: url('Font/Poppins-Regular.ttf');
+}
+@font-face{
+    font-family: 'Popin SemiBold';
+    src: url('Font/Poppins-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Popin Bold';
+    src: url(Font/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: 'Montserrat Bolditalic';
+    src: url('Font/Montserrat-BoldItalic.ttf');
+}
+body{
+    overflow-x: hidden;
+}
+.Navbar {
+    position: relative;
+    left: 2vw;
+    top: 20px;
+    display: flex;
+    align-items: center; /* Menyamakan vertikal di tengah */
+    gap: 4vw;
+    margin-bottom: 40px;
+}
+
+.NamaPerusahaan {
+    display: flex;
+    font-family: 'Montserrat Bolditalic',sans-serif;
+    position: relative;
+    top: -0.2vw;
+    
+    margin-right: 8vw;
+}
+.Color1{
+    font-family: 'Montserrat Bolditalic',sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: 2.813vw;
+}
+.Color2{
+    font-family: 'Montserrat Bolditalic',sans-serif;
+    color:#668C6A;
+    text-decoration: none;
+    font-size: 2.813vw;
+}
+.dropbtn {
+    background: none;
+    background-color: none;
+    color: black;
+    width: 5vw;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Popin Regular',sans-serif;
+    font-size: 1.563vw;
+}
+
+/* Container untuk Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Isi Dropdown (hidden secara default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a:hover::after {
+    transform: scaleX(1);
+}
+/* Links di dalam Dropdown */
+.dropdown-content a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    color: black;
+    width: 10vw;
+    height: 2vw;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+/* Mengubah warna link dropdown saat hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Menampilkan Dropdown saat hover */
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.JarakMenubar {
+    position: relative;
+    top: 0.1vw;
+    display: flex;
+    gap: 4vw;
+}
+
+.Menubar {
+    font-family: 'Popin Regular',sans-serif;
+    font-size: 1.563vw;
+    text-decoration: none;
+    color: black;
+}
+.profile{
+    position: relative;
+    background-color: gray;
+    left: 18vw;
+    height: 3.906vw;
+    width: 3.906vw;
+    border-radius: 50%;
+}
+
+.modal { /* Hidden by default */
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 2vw;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.NameAndPicture{
+    display: flex;
+}
+.GmbrNameAndPicture{
+    margin-left: 1vw;
+    width: 3vw;
+    height: 3vw;
+}
+.NameProfile{
+    font-family: 'Popin Reguler',sans-serif;
+    color: #668C6A;
+    font-size: 1.3vw;
+    position: relative;
+    top: -1vw;
+    left: 1.5vw;
+}
+.Garishiasan{
+    border-radius: 50px;
+    border: 0.4vw solid #668C6A;
+}
+.modal-content{
+    width: 20vw;
+}
+.profilemenu{
+    position: relative;
+    top: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6vw;
+}
+.menu{
+    display: flex;
+    width: 20vw;
+    height: 3vw;
+    text-decoration: none;
+    font-family: 'Popin Reguler',sans-serif;
+    font-size: 1.3vw;
+    color: #0E0E0E;
+}
+.Menuu{
+    width: 20vw;
+    height: 3vw;
+}
+.Menuu:hover{
+    background-color: #EEFFF0;
+}
+.menu #Gambar{
+    position: relative;
+    top: 0.8vw;
+    margin-left: 1vw;
+    width: 1.5vw;
+    height: 1.5vw;
+}
+.menu #nama{
+    position: relative;
+    left: 1vw;
+    top: 0.7vw;
+    width: 95%;
+}
+
+.Section1{
+    position: relative;
+    left: 2vw;
+    top: 2vw;
+    width: 95%;
+    height: 45vw;
+    background-image: url('Gambar/HalamanNews/GambarSection2.jpg');
+    background-size: cover; /* Menyamakan rasio aspek gambar dengan ukuran container */
+    background-position: center; /* Posisi gambar di tengah container */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    border-radius: 10px;
+}
+
+.Section1 #Judul{
+ position: relative;
+ color: white;
+ left: 5%;
+ top: 28%;
+ width: 40%;
+ font-family: 'Popin Bold',sans-serif;
+ font-size: 2.7vw;
+}
+
+.Section1 #btnExplore{
+    font-family: 'Popin Reguler',sans-serif;
+    border-radius: 5px;
+    font-size: 1.3vw;
+    height: 2vw;
+    width: 6vw;
+    border: none;
+    background-color: black;
+    color: whitesmoke;
+    position: relative;
+    left: 5%;
+    top: 32%;
+}
+
+.RecentActivity{
+    text-align: center;
+   margin-top: 10vw;
+}
+.RecentActivity #Judul{
+    font-family: 'Popin SemiBold',sans-serif;
+    font-size: 3vw;
+}
+.RecentActivity #Sub{
+    position: relative;
+    top: -2.5vw;
+    font-family: 'Popin Reguler',sans-serif;
+    font-size: 1vw;
+}
+
+.daftaractivity{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 2vw;
+    width: 95%;
+    height: 46vw;
+    top: 4vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    gap: 2vw;
+}
+
+.activity{
+    flex-shrink: 0;
+    display: flex;
+    border-radius: 10px;
+    height: 22vw;
+    width: 98%;
+    background-color: #EBE6E6;
+    gap: 5vw;
+}
+
+.GmbrActivity{
+    position: relative;
+    border-radius: 10px;
+    top: 2.6vw;
+    left: 2vw;
+    width: 17vw;
+    height: 17vw;
+}
+
+.JudulActivity{
+    font-family: 'Popin SemiBold',sans-serif;
+    font-size: 2vw;
+    margin-top: 3.2vw;
+}
+
+.IsiActivity{
+    font-family: 'Popin Reguler';
+    font-size: 1vw;
+    position: relative;
+    margin-top: -1.4vw;
+    width: 65vw;
+    height: 9vw;
+}
+
+.Readmore{
+    color: white;
+    background-color: #668C6A;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Popin Reguler',sans-serif;
+    font-size: 1vw;
+    height: 2vw;
+    width: 7vw;
+}
+
+.Footer{
+    left: -2vw;
+    width: 106%;
+    height: 20vw;
+    background-color: #242424;
+    position: relative;
+    top: 15vw;
+}
+.Horizontal1{
+    position: relative;
+    top: 10%;
+    display: flex;
+    gap: 10vw;
+}
+.SocialMedia{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7vw;
+    margin-left: 5vw;
+}
+.SocialMedia #Judul{
+    font-size: 1.3vw;
+    font-family: 'Popin SemiBold',sans-serif;
+    color: #668C6A;
+}
+.Gambarsosmed{
+    display: flex;
+    gap: 1vw;
+}
+.Gambarsosmed #Gambar{
+    color: white;
+    width: 2.5vw;
+    height: 2.5vw;
+    filter: brightness(0) invert(1);
+}
+.Daftarsosmed{
+    opacity: 80%;
+    font-size: 1vw;
+    font-family: 'Popin Reguler',sans-serif;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: -1vw;
+}
+.ServiceFooter{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6vw;
+}
+.ServiceFooter #Judul{
+    font-size: 1.3vw;
+    font-family: 'Popin SemiBold',sans-serif;
+    color: #668C6A;
+}
+.Daftarservice{
+    opacity: 80%;
+    font-size: 1vw;
+    font-family: 'Popin Reguler',sans-serif;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: -1vw;
+}
+.NamaPerusahaan2 {
+    display: flex;
+    font-family: 'Montserrat Bolditalic',sans-serif;
+    position: relative;
+    top: 3vw;
+    left: 33vw;
+    margin-right: 8vw;
+}
+.NamaPerusahaan2 #Color1{
+    font-family: 'Montserrat Bolditalic',sans-serif;
+    color: #668C6A;
+    text-decoration: none;
+    font-size: 2.813vw;
+}
+.NamaPerusahaan2 #Color2{
+    font-family: 'Montserrat Bolditalic',sans-serif;
+    color:white;
+    text-decoration: none;
+    font-size: 2.813vw;
+}
+
+.Horizontal2{
+    display: flex;
+    position: relative;
+    left: 45vw;
+    gap: 3vw;
+}
+.Horizontal2 #isi{
+    font-size: 1vw;
+    opacity: 80%;
+    text-decoration: none;
+    font-family: 'Popin Reguler',sans-serif;
+    color: white;
+}

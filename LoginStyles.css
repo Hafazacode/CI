@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'Popin Reguler';
+    src: url('Font/Poppins-Regular.ttf');
+}
+@font-face{
+    font-family: 'Popin SemiBold';
+    src: url('Font/Poppins-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Popin Bold';
+    src: url(Font/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: 'Montserrat Bolditalic';
+    src: url('Font/Montserrat-BoldItalic.ttf');
+}
+@font-face {
+    font-family: 'Popin Medium';
+    src: url(Font/Poppins-Medium.ttf);
+}
+body{
+    overflow-x: hidden;
+}
+.Navbar {
+    position: relative;
+    left: 2vw;
+    top: 20px;
+    display: flex;
+    align-items: center; /* Menyamakan vertikal di tengah */
+    gap: 4vw;
+    margin-bottom: 40px;
+}
+
+.NamaPerusahaan {
+    display: flex;
+    font-family: 'Montserrat Bolditalic',sans-serif;
+    position: relative;
+    top: -0.2vw;
+    
+    margin-right: 8vw;
+}
+.Color1{
+    font-family: 'Montserrat Bolditalic',sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: 2.813vw;
+}
+.Color2{
+    font-family: 'Montserrat Bolditalic',sans-serif;
+    color:#668C6A;
+    text-decoration: none;
+    font-size: 2.813vw;
+}
+.dropbtn {
+    background: none;
+    background-color: none;
+    color: black;
+    width: 5vw;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Popin Regular',sans-serif;
+    font-size: 1.563vw;
+}
+
+/* Container untuk Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Isi Dropdown (hidden secara default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a:hover::after {
+    transform: scaleX(1);
+}
+/* Links di dalam Dropdown */
+.dropdown-content a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    color: black;
+    width: 10vw;
+    height: 2vw;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+/* Mengubah warna link dropdown saat hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Menampilkan Dropdown saat hover */
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.JarakMenubar {
+    position: relative;
+    top: 0.1vw;
+    display: flex;
+    gap: 4vw;
+}
+
+.Menubar {
+    font-family: 'Popin Regular',sans-serif;
+    font-size: 1.563vw;
+    text-decoration: none;
+    color: black;
+}
+
+.profile{
+    position: relative;
+    background-color: gray;
+    left: 18vw;
+    height: 3.906vw;
+    width: 3.906vw;
+    border-radius: 50%;
+}
+
+.modal { /* Hidden by default */
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    overflow: hidden;
+}
+.modal-content {
+    overflow: hidden;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 2vw;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.NameAndPicture{
+    display: flex;
+}
+.GmbrNameAndPicture{
+    margin-left: 1vw;
+    width: 3vw;
+    height: 3vw;
+}
+.NameProfile{
+    font-family: 'Popin Reguler',sans-serif;
+    color: #668C6A;
+    font-size: 1.3vw;
+    position: relative;
+    top: -1vw;
+    left: 1.5vw;
+}
+.Garishiasan{
+    border-radius: 50px;
+    border: 0.4vw solid #668C6A;
+}
+.modal-content{
+    width: 20vw;
+}
+.profilemenu{
+    position: relative;
+    top: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6vw;
+}
+.menu{
+    display: flex;
+    width: 20vw;
+    height: 3vw;
+    text-decoration: none;
+    font-family: 'Popin Reguler',sans-serif;
+    font-size: 1.3vw;
+    color: #0E0E0E;
+}
+.Menuu{
+    width: 20vw;
+    height: 3vw;
+}
+.Menuu:hover{
+    background-color: #EEFFF0;
+}
+.menu #Gambar{
+    position: relative;
+    top: 0.8vw;
+    margin-left: 1vw;
+    width: 1.5vw;
+    height: 1.5vw;
+}
+.menu #nama{
+    position: relative;
+    left: 1vw;
+    top: 0.7vw;
+    width: 95%;
+}
+
+.JudulHalaman{
+    font-family: 'Popin SemiBold',sans-serif;
+    font-size: 2vw;
+    margin-top: 5vw;
+    text-align: center;
+}
+
+.form-login{
+    background : linear-gradient(to bottom,white,#99D89F);
+    position: relative;
+    top: -1vw;
+    left: 34vw;
+    width: 30vw;
+    height: 30vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.form-login-content label{
+    font-family: 'Popin Medium',sans-serif;
+    font-size: 1vw;
+}
+.form-login-content form{
+    position: relative;
+    top: 4vw;
+    left: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.form-login-content input{
+    position: relative;
+    top: -1vw;
+    width: 20vw;
+    height: 2vw;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+.form-login-content .lupa-sandi{
+    position: relative;
+    color: #0E0E0E;
+    top: -1.6vw;
+    text-decoration: none;
+    font-family: 'Popin Medium',sans-serif;
+    font-size: 0.8vw;
+}
+.form-login-content button{
+    font-size: 1.5vw;
+    font-family: 'Popin Medium',sans-serif;
+    border-radius: 7px;
+    border: 1px solid black;
+    background-color: #668C6A;
+    position: relative;
+    top: 1vw;
+    width: 20vw;
+    height: 3vw;
+    color: white;
+}
