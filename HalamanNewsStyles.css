@@ -466,7 +466,7 @@ body{
     display: flex;
     gap: 1vw;
 }
-.Gambarsosmed #Gambar{
+.Gambarsosmed .Gambar{
     color: white;
     width: 2.5vw;
     height: 2.5vw;
@@ -527,7 +527,7 @@ body{
     left: 45vw;
     gap: 3vw;
 }
-.Horizontal2 #isi{
+.Horizontal2 .isi{
     font-size: 1vw;
     opacity: 80%;
     text-decoration: none;
