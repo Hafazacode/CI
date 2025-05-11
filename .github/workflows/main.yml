@@ -23,11 +23,11 @@ jobs:
         run: npm install
 
       - name: Install vnu-jar
-        run: npm install --save-dev @validator/vnu-jar
+        run: npm install --save-dev vnu-jar
 
       - name: Run HTML Validator
         run: |
-          npx vnu \
+          java -jar node_modules/vnu-jar/build/dist/vnu.jar \
             --errors-only \
             --skip-non-html \
             --no-stream \
