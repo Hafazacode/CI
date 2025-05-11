@@ -22,3 +22,19 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Download vnu.jar (HTML Validator)
+        run: |
+          wget https://github.com/validator/validator/releases/latest/download/vnu.jar
+
+      - name: Run HTML Validator
+        run: |
+          java -jar vnu.jar \
+            --errors-only \
+            --skip-non-html \
+            --no-stream \
+            --Werror \
+            .
+
+      - name: Print validation finished
+        run: echo "HTML validation complete."
