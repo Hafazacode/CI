@@ -22,4 +22,3 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-Z
