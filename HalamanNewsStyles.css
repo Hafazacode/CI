@@ -216,14 +216,14 @@ body{
 .Menuu:hover{
     background-color: #EEFFF0;
 }
-.menu #Gambar{
+.menu .gambar{
     position: relative;
     top: 0.8vw;
     margin-left: 1vw;
     width: 1.5vw;
     height: 1.5vw;
 }
-.menu #nama{
+.menu .nama{
     position: relative;
     left: 1vw;
     top: 0.7vw;
@@ -417,7 +417,7 @@ body{
 .Tulisan3{
     width: 60%;
 }
-.Tulisan3 #Judul{
+.Tulisan3 #Judul_Section3{
     font-family: 'Popin SemiBold',sans-serif;
     font-size: 1.8vw
 }
@@ -457,7 +457,7 @@ body{
     gap: 0.7vw;
     margin-left: 5vw;
 }
-.SocialMedia #Judul{
+.SocialMedia #Judul_SocialMedia{
     font-size: 1.3vw;
     font-family: 'Popin SemiBold',sans-serif;
     color: #668C6A;
@@ -486,7 +486,7 @@ body{
     flex-direction: column;
     gap: 0.6vw;
 }
-.Service #Judul{
+.Service #Judul_service{
     font-size: 1.3vw;
     font-family: 'Popin SemiBold',sans-serif;
     color: #668C6A;
